@@ -137,7 +137,7 @@ header .content-wrapper img {
   width: 100%;
 }
 
-header .header-divider {
+.header-divider {
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
@@ -166,6 +166,10 @@ footer {
 footer .content-wrapper {
   width: 55%;
   margin: 50px 0;
+}
+
+footer .footer-content {
+  text-align: center;
 }
 
 footer .contact {
@@ -274,9 +278,7 @@ aside input {
   margin: 20px 0;
 }
 
-/* -------------------- tablet styles - homepage -------------------- */
 
-/* -------------------- Desktop styles - homepage -------------------- */
 
 /* ==========================================================================
    About Page
@@ -301,12 +303,6 @@ aside input {
 .contact-content p {
   margin: 0;
 }
-
-/* -------------------- tablet styles - about -------------------- */
-
-/* -------------------- Desktop styles - about -------------------- */
-
-
 
 /* ==========================================================================
    FAQ Page
@@ -336,10 +332,6 @@ aside input {
 .faq-content {
   margin-bottom: 30px;
 }
-/* -------------------- tablet styles - faq -------------------- */
-
-/* -------------------- Desktop styles - faq -------------------- */
-
 
 
 /* ==========================================================================
@@ -350,89 +342,228 @@ aside input {
  * Hide visually and from screen readers
  */
 
-.hidden,
-[hidden] {
-  display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
-
-/*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: " ";
-  display: table;
-}
-
-.clearfix::after {
-  clear: both;
-}
+ .hidden,
+ [hidden] {
+   display: none !important;
+ }
+ 
+ /*
+  * Hide only visually, but have it available for screen readers:
+  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+  *
+  * 1. For long content, line feeds are not interpreted as spaces and small width
+  *    causes content to wrap 1 word per line:
+  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+  */
+ 
+ .sr-only {
+   border: 0;
+   clip: rect(0, 0, 0, 0);
+   height: 1px;
+   margin: -1px;
+   overflow: hidden;
+   padding: 0;
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
+   /* 1 */
+ }
+ 
+ /*
+  * Extends the .sr-only class to allow the element
+  * to be focusable when navigated to via the keyboard:
+  * https://www.drupal.org/node/897638
+  */
+ 
+ .sr-only.focusable:active,
+ .sr-only.focusable:focus {
+   clip: auto;
+   height: auto;
+   margin: 0;
+   overflow: visible;
+   position: static;
+   white-space: inherit;
+   width: auto;
+ }
+ 
+ /*
+  * Hide visually and from screen readers, but maintain layout
+  */
+ 
+ .invisible {
+   visibility: hidden;
+ }
+ 
+ /*
+  * Clearfix: contain floats
+  *
+  * For modern browsers
+  * 1. The space content is one way to avoid an Opera bug when the
+  *    `contenteditable` attribute is included anywhere else in the document.
+  *    Otherwise it causes space to appear at the top and bottom of elements
+  *    that receive the `clearfix` class.
+  * 2. The use of `table` rather than `block` is only necessary if using
+  *    `:before` to contain the top-margins of child elements.
+  */
+ 
+ .clearfix::before,
+ .clearfix::after {
+   content: " ";
+   display: table;
+ }
+ 
+ .clearfix::after {
+   clear: both;
+ }
+ 
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
+   Media Queries
    ========================================================================== */
+	
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+   @media only screen and (min-width: 768px) {
+    /*Tablet styles here*/
+   }
+    /* General */
+    
+    .content-wrapper {
+      max-width: 640px;
+    }
+    
+    /* Header */
+    
+    header {
+      justify-content: space-around;
+      padding: 30px 65px;
+    }
+    
+    header .content-wrapper {
+      width: 100%;
+      justify-content: space-between;
+    }
+    
+    header .content-wrapper img {
+      width: 220px;
+    }
+    
+    header nav {
+      width: 20%;
+    }
+    
+    header nav ul {
+      justify-content: space-between;
+    }
+    
+    header .header-divider {
+      display: none;
+    }
+    
+    /* Footer */
+    
+    footer .content-wrapper {
+      width: 60%;
+      margin: 100px 0;
+    }
+    
+    footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    footer .contact {
+      margin-bottom: 0;
+    }
+    
+    
+    /* -------------------- tablet styles - Homepage -------------------- */
+    
+    /* Hero Area */
+    
+    aside .content-wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row wrap;
+    }
+    
+    aside .content-wrapper .form-description,
+    aside .content-wrapper .form {
+      width: 40%;
+      margin: 0;
+    }
+    
+    .features article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        flex-basis: 50%;
+      }
+      
+      .features .features-item-description {
+        width: 50%;
+      }
+    
+    /* Reviews */
+    
+    .reviews article {
+      display: flex;
+      justify-content: flex-end;
+    
+    }
+    
+    .reviews article div {
+        width: 50%;    
+    }
+    
+    
+    /* -------------------- tablet styles - about -------------------- */
+    
+    .mission-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 40px;
+    }
+    
+    .mission-content p {
+      width: 45%;
+    }
+    
+    .contact-section .content-wrapper h2 {
+      width: 45%;
+    }
+    
+    .contact-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    
+    /* -------------------- tablet styles - faq -------------------- */
+    
+    .faq .content-wrapper {
+      justify-content: space-between;
+    }
+    
+    .faq-content {
+      flex-basis: 40%;
+    }
+    
+    .faq h2 {
+      width: 100%;
+    }
+  
+    
+    @media only screen and (min-device-width: 1200px) {
+    /* -------------------- Desktop styles - homepage -------------------- */
+    
+    /* -------------------- Desktop styles - about -------------------- */
+    
+    /* -------------------- Desktop styles - faq -------------------- */
+    }
+    
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
