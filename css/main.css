@@ -419,148 +419,196 @@ aside input {
    Media Queries
    ========================================================================== */
 	
+  @media only screen and (min-width: 768px) {
+  /*Tablet styles here*/
 
-   @media only screen and (min-width: 768px) {
-    /*Tablet styles here*/
-
-    /* General */
+  /* General */
     
-    .content-wrapper {
-      max-width: 640px;
-    }
+  .content-wrapper {
+    max-width: 640px;
+  }
     
-    /* Header */
+  /* Header */
     
-    header {
-      justify-content: space-around;
-      padding: 30px 65px;
-    }
+  header {
+    justify-content: space-around;
+    padding: 30px 65px;
+  }
     
-    header .content-wrapper {
-      width: 100%;
-      justify-content: space-between;
-    }
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
     
-    header .content-wrapper img {
-      width: 220px;
-    }
+  header .content-wrapper img {
+    width: 220px;
+  }
     
-    header nav {
-      width: 20%;
-    }
+  header nav {
+    width: 20%;
+  }
     
-    header nav ul {
-      justify-content: space-between;
-    }
+  header nav ul {
+    justify-content: space-between;
+  }
     
-    header .header-divider {
-      display: none;
-    }
+  header .header-divider {
+    display: none;
+  }
     
-    /* Footer */
+  /* Footer */
     
-    footer .content-wrapper {
-      width: 60%;
-      margin: 100px 0;
-    }
+  footer .content-wrapper {
+    width: 60%;
+    margin: 100px 0;
+  }
     
-    footer .footer-content {
+  footer .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    }
+  }
     
-    footer .contact {
-      margin-bottom: 0;
-    }
+  footer .contact {
+    margin-bottom: 0;
+  }
+       
+/* -------------------- tablet styles - Homepage -------------------- */
     
+  /* Hero Area */
     
-    /* -------------------- tablet styles - Homepage -------------------- */
+  aside .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
     
-    /* Hero Area */
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 40%;
+    margin: 0;
+  }
     
-    aside .content-wrapper {
-      display: flex;
-      justify-content: space-between;
-      flex-flow: row wrap;
-    }
-    
-    aside .content-wrapper .form-description,
-    aside .content-wrapper .form {
-      width: 40%;
-      margin: 0;
-    }
-    
-    .features article {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-flow: column wrap;
-        flex-basis: 50%;
-      }
+  .features article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+  }
       
-      .features .features-item-description {
-        width: 50%;
-      }
+  .features .features-item-description {
+    width: 50%;
+  }
     
-    /* Reviews */
+  /* Reviews */
     
-    .reviews article {
-      display: flex;
-      justify-content: space-between;
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
     
-    }
+  .reviews article div {
+     width: 50%;    
+  }
     
-    .reviews article div {
-        width: 50%;    
-    }
+/* -------------------- tablet styles - about -------------------- */
     
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+  }
     
-    /* -------------------- tablet styles - about -------------------- */
+  .mission-content p {
+    width: 45%;
+  }
     
-    .mission-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-bottom: 40px;
-    }
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
     
-    .mission-content p {
-      width: 45%;
-    }
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
     
-    .contact-section .content-wrapper h2 {
-      width: 80%;
-    }
+/* -------------------- tablet styles - faq -------------------- */
     
-    .contact-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq-content {
+    flex-basis: 40%;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
+  
+}
+
+@media only screen and (min-device-width: 1200px) {    
+ /*Desktop styles here*/
+
+  /* General */
+  
+  .content-wrapper {
+    max-width: 960px;
+  }
     
-    /* -------------------- tablet styles - faq -------------------- */
+/* -------------------- Desktop styles - homepage -------------------- */
+
+  /* Hero */
+
+  .hero-area h1 {
+    width: 60%;
+  }
+
+  /* Aside */
+
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  /* Features */
+
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  /* Reviews */ 
+
+  .reviews article div {
+    width: 43%
+  }
     
-    .faq .content-wrapper {
-      justify-content: space-between;
-    }
+/* -------------------- Desktop styles - about -------------------- */
+
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+  }
     
-    .faq-content {
-      flex-basis: 40%;
-    }
-    
-    .faq h2 {
-      width: 100%;
-    }
-   }
-    
-    @media only screen and (min-device-width: 1200px) {
-    /* -------------------- Desktop styles - homepage -------------------- */
-    
-    /* -------------------- Desktop styles - about -------------------- */
-    
-    /* -------------------- Desktop styles - faq -------------------- */
-    }
+/* -------------------- Desktop styles - faq -------------------- */
+
+  .faq h2 {
+   width: 100%;
+  }
+
+}
     
 
 @media print,
