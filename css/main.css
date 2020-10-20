@@ -114,6 +114,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
 }
  
 h3, 
@@ -449,7 +450,7 @@ input[type=button] {
 }
 
 .faq-content {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .faq-content h4 {
@@ -691,7 +692,7 @@ footer .social-icons {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
     
   .mission-content p {
@@ -704,9 +705,11 @@ footer .social-icons {
 
   .contact-section .content-wrapper h2 {
     width: 80%;
+    margin: 20px 0;
   }
     
   .contact-content {
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -775,6 +778,10 @@ footer .social-icons {
 
   /* Hero */
 
+  .hero-area {
+    min-height: 600px;
+  }
+
   .hero-area h1 {
     font-size: 3.75em;
     width: 70%;
@@ -798,7 +805,7 @@ footer .social-icons {
   /* Features */
 
   .features h2 {
-    width: 90%;
+    width: 92%;
   }
 
   .features article {
@@ -827,6 +834,10 @@ footer .social-icons {
     font-size: 3em;
   }
 
+  .contact-section .content-wrapper h2 {
+    margin-top: 20px;
+  }
+
   .map figure {
     padding-bottom: 37.5%; 
   }
@@ -850,7 +861,6 @@ footer .social-icons {
 
 }
     
-
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
