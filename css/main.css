@@ -240,11 +240,18 @@ footer .social-icons {
   align-items: center;
 }
 
-footer .social-icons ul li a {
+footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
+}
+
+footer .social-icons p i {
+  font-size: 1.3125em;
 }
 
 footer .copyright {
@@ -605,6 +612,15 @@ input[type=button] {
   footer .contact {
     margin-bottom: 0;
   }
+
+  footer p {
+    line-height: 1.285;
+}
+
+footer .social-icons {
+  width: 12.5em;
+  justify-content: space-between;
+}
        
 /* -------------------- tablet styles - Homepage -------------------- */
     
